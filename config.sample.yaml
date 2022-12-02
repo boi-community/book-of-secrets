@@ -1,0 +1,6 @@
+# The contents of this config should be *combined* with your existing server configs within Jerbot.
+# (I should really write up proper documentation...)
+# As always, just don't copy any features you don't want.
+
+# This enables searching of the Binding of Isaac wiki.
+wiki: true
