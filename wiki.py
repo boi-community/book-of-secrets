@@ -11,6 +11,7 @@ try:
     import fandom
 except ModuleNotFoundError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "fandom-py"])
+    import fandom
 
 
 def get_enabled_guilds():
