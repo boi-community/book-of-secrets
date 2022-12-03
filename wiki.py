@@ -15,7 +15,7 @@ except ModuleNotFoundError:
 
 
 def get_enabled_guilds():
-    main.load_plugin_configs("public_roles", plugin.d)
+    main.load_plugin_configs("wiki", plugin.d)
     return tuple(plugin.d["config"].keys())
 
 
