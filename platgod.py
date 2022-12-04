@@ -48,11 +48,10 @@ async def platgod_embed(
         "bos_platgod",
         f'select detail from {page} where item = "{query[page_num - 1][0]}"',
     ):
-        embed.add_field(
-            name="_ _",  # Embed fields *require* both name and value arguments. The "_ _" tricks Discord into thinking there's text there when there isn't.... shhhhhhhhhh
-            value=f"**{detail}**",
-            inline=True,
-        )
+        if not embed.description:
+            embed.description = detail
+        else:
+            embed.description = embed.description + f"\n\n{detail}"
     return embed
 
 
