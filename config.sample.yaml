@@ -4,3 +4,15 @@
 
 # This enables searching of the Binding of Isaac wiki.
 wiki: true
+
+# This enables Platinum God- shorthand, more concise versions of the wiki information, but not always as accurate.
+platgod: 
+  # List of pages from platinumgod.co.uk to scrape
+  pages:
+  - "original"
+  - "rebirth"
+  - "antibirth"
+  - "afterbirth"
+  - "afterbirth-plus"
+  - "repentance"
+  embed_color: 0xffffff
