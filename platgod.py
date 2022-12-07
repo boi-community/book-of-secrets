@@ -159,7 +159,7 @@ async def platgod(ctx: lightbulb.Context) -> None:
     )
     message = await ctx.respond(components=view.build(), embed=embed)
 
-    view.start(await message)
+    await view.start(await message)
     await view.wait()
 
     embed = (await ctx.previous_response).embeds[0]
